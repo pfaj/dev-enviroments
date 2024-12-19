@@ -1,8 +1,12 @@
 {
-  description = "Development environment templates for Python and Node.js";
+  description = "Flake for generating project templates";
 
   outputs = {self}: {
     templates = {
+      blank = {
+        path = ./blank;
+        description = "Blank flake for custom tooling";
+      };
       python = {
         path = ./python;
         description = "Python development environment with comprehensive tooling";
