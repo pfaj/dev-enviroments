@@ -14,11 +14,15 @@
   in {
     devShell.x86_64-linux = pkgs.mkShell {
       buildInputs = with pkgs; [
-        # Packages go here
+        gcc
+        gnumake
+        cmake
+        pkg-config
+        gdb
+        valgrind
       ];
-
       shellHook = ''
-
+        echo "C development environment ready!"
       '';
     };
   };

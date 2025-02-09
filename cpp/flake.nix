@@ -14,11 +14,23 @@
   in {
     devShell.x86_64-linux = pkgs.mkShell {
       buildInputs = with pkgs; [
-        # Packages go here
+        gcc
+        gpp
+        clang
+        clang-tools
+        cmake
+        gnumake
+        ninja
+        pkg-config
+        gdb
+        lldb
+        valgrind
+        boost
+        fmt
+        catch2
       ];
-
       shellHook = ''
-
+        echo "C++ development environment ready!"
       '';
     };
   };
