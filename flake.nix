@@ -23,6 +23,10 @@
         path = ./js;
         description = "Node.js development environment with TypeScript and ESLint";
       };
+      java = {
+        path = ./java;
+        description = "Java development environment";
+      };
       python = {
         path = ./python;
         description = "Python development environment with comprehensive tooling";
